@@ -29,13 +29,12 @@ body { margin: 0; background: var(--dark-blue); color: #fff; font-family: var(--
 #thanks { background-image: url('../public/backgrounds/05-thanks-desktop.webp'); }
 
 @media (max-width: 768px) {
-    #home { background-image: url('../public/backgrounds/01-home-mobile.webp'); background-position: 70% center; }
-    #about-event { background-image: url('../public/backgrounds/02-about-mobile.webp'); }
-    #about-samir { background-image: url('../public/backgrounds/03-samir-mobile.webp'); }
-    #details { background-image: url('../public/backgrounds/04-details-mobile.webp'); }
-    #thanks { background-image: url('../public/backgrounds/05-thanks-mobile.webp'); }
-    
-    h1 { font-size: 3rem !important; }
+    #home { background-image: url('../public/backgrounds/01-home-mobile.webp'); background-position: center bottom; }
+    #home .content-wrapper { flex-direction: column-reverse; justify-content: flex-end; padding-top: 80px; }
+    #home .hero-text { text-align: center; order: -1; margin-bottom: 20px; }
+    #home .hero-image { width: 250px; order: 1; }
+    h1 { font-size: 2.5rem !important; }
+    .hero-button { padding: 12px 30px; font-size: 1rem; align-self: center; }
 }
 
 .card-panel { background: rgba(250, 249, 245, 0.9); color: var(--dark-blue); padding: 30px; border-radius: 20px; max-width: 90%; text-align: center; }
