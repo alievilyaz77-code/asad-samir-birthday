@@ -8,14 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</div>
     <nav>
-        <a href="#home" onclick="document.querySelector('nav').classList.remove('active')">Главная</a>
-        <a href="#about-event" onclick="document.querySelector('nav').classList.remove('active')">О празднике</a>
-        <a href="#about-samir" onclick="document.querySelector('nav').classList.remove('active')">О Самире</a>
-        <a href="#details" onclick="document.querySelector('nav').classList.remove('active')">Детали</a>
-        <a href="#thanks" onclick="document.querySelector('nav').classList.remove('active')">Спасибо</a>
+        <a href="#home">Главная</a>
+        <a href="#about-event">О празднике</a>
+        <a href="#about-samir">О Самире</a>
+        <a href="#details">Детали</a>
+        <a href="#thanks">Спасибо</a>
     </nav>
+
+    <div class="music-controls" style="position:fixed; top:15px; right:20px; z-index:2000;">
+        <button id="music-toggle" aria-label="Включить/выключить музыку" style="background: rgba(11, 13, 23, 0.7); border: 2px solid var(--gold); border-radius: 50%; width: 40px; height: 40px; cursor: pointer; color: var(--gold); display: flex; align-items: center; justify-content: center;">🎵</button>
+        <audio id="bg-music" loop><source src="public/music/firework.mp3" type="audio/mpeg"></audio>
+    </div>
 
     <section id="home" class="section">
         <div class="hero-text" style="text-align:center; padding-top: 100px;">

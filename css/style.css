@@ -46,11 +46,9 @@ body { margin: 0; background: var(--dark-blue); color: #fff; font-family: var(--
 h1, h2 { font-family: var(--font-heading); color: var(--gold); margin: 10px 0; }
 
 /* Navigation */
-nav { position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1000; background: rgba(0,0,0,0.3); padding: 10px 0; display: flex; justify-content: center; gap: 15px; }
-nav a { color: #fff; text-decoration: none; font-size: 0.8rem; text-transform: uppercase; }
-.menu-toggle { display: none; }
+nav { position: fixed; top: 15px; width: 100%; text-align: center; z-index: 1000; display: flex; justify-content: center; gap: 15px; }
+nav a { color: #fff; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0,0,0,0.8); }
+
 @media (max-width: 768px) {
-    .menu-toggle { display: block; position: fixed; top: 15px; right: 20px; z-index: 2000; color: var(--gold); font-size: 1.5rem; cursor: pointer; }
-    nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); height: 100dvh; justify-content: center; }
-    nav.active { display: flex; }
+    nav { display: none; }
 }
