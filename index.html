@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение: Асад-Самир</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about-event">О празднике</a>
+        <a href="#about-samir">О Самире</a>
+        <a href="#details">Детали</a>
+        <a href="#thanks">Спасибо</a>
+    </nav>
+
+    <section id="home" class="section">
+        <div style="text-align:center; color:#fff; text-shadow:0 2px 4px rgba(0,0,0,0.5);">
+            <p>ПРИГЛАШАЕМ ВАС<br>НА ПЕРВЫЙ ДЕНЬ РОЖДЕНИЯ<br>НАШЕГО СЫНОЧКА</p>
+            <h1 style="font-size:6rem;">АСАД-САМИР</h1>
+            <p><em>Turns One</em><br>МАЛЕНЬКИЙ ЧЕЛОВЕК — БОЛЬШИЕ МЕЧТЫ</p>
+            <a href="#about-event" class="gold-btn">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+    </section>
+
+    <section id="about-event" class="section">
+        <div class="card-panel">
+            <h2>О ПРАЗДНИКЕ</h2>
+            <p>Наш Асад-Самир отмечает свой первый день рождения!<br><br>Для нас это особенный и очень важный день. Мы будем счастливы разделить его с вами — с самыми близкими людьми, которые рядом и делают нашу жизнь ярче.</p>
+            <a href="#about-samir" class="gold-btn">ПОЗНАКОМИТЬСЯ С ИМЕНИННИКОМ</a>
+        </div>
+    </section>
+
+    <section id="about-samir" class="section">
+        <div class="card-panel">
+            <h2>НАШ ГЕРОЙ — АСАД-САМИР</h2>
+            <p>Асад-Самир — наш маленький исследователь и большой мечтатель. Ему 1 год, и он уже так много умеет: улыбаться, удивляться, открывать этот мир и наполнять наши дни счастьем.<br><br>Он любознательный, добрый и очень солнечный. Мы верим, что впереди у него целая вселенная ярких открытий!</p>
+            <img src="public/images/asad_samir_astronaut.png" style="width:180px; border-radius:50%; border:5px solid var(--gold); margin:20px 0;">
+            <br><a href="#details" class="gold-btn">УЗНАТЬ ДЕТАЛИ ПРАЗДНИКА</a>
+        </div>
+    </section>
+
+    <section id="details" class="section">
+        <div class="card-panel">
+            <h2>ДЕТАЛИ ПРАЗДНИКА</h2>
+            <p><strong>ДАТА:</strong> 14 ноября 2026, суббота.<br>
+            <strong>ВРЕМЯ:</strong> 17:00, сбор гостей.<br>
+            <strong>МЕСТО:</strong> Palazzo Restaurant, Бишкек, ул. Сухэ-Батора, 3/2.</p>
+            <a href="https://2gis.kg/bishkek/geo/70000001038918416/74.618547,42.823898?inv_by=52c50dfe17c84af7b76a63bdd1e03c6a&inv_ts=1793277753" target="_blank" class="gold-btn">ПОСТРОИТЬ МАРШРУТ</a>
+        </div>
+    </section>
+
+    <section id="thanks" class="section">
+        <div class="card-panel">
+            <h2>СПАСИБО, ЧТО ВЫ С НАМИ</h2>
+            <p>Для нас этот день — особенный. И нам очень хочется разделить его с теми, кто дорог нашей семье.<br><br>Спасибо за вашу любовь, тепло и внимание к нашему Асад-Самиру. Будем счастливы видеть вас и вместе сохранить ещё одно тёплое воспоминание в его первой главе жизни.<br><br>До встречи на празднике!</p>
+        </div>
+    </section>
+
+    <div style="position:fixed; bottom:20px; right:20px; z-index:1000;">
+        <button id="music-toggle" style="background:var(--gold); border:none; padding:15px; border-radius:50%; cursor:pointer;">🎵</button>
+        <audio id="bg-music" loop><source src="public/music/firework.mp3" type="audio/mpeg"></audio>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

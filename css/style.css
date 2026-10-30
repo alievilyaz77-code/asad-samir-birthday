@@ -1,0 +1,44 @@
+:root {
+    --gold: #d4af37;
+    --dark-blue: #0b0d17;
+    --cream: #faf9f5;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--dark-blue); color: #fff; font-family: var(--font-body); overflow-x: hidden; }
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Background mappings */
+#home { background-image: url('../public/backgrounds/01-home-desktop.webp'); }
+#about-event { background-image: url('../public/backgrounds/02-about-desktop.webp'); }
+#about-samir { background-image: url('../public/backgrounds/03-samir-desktop.webp'); }
+#details { background-image: url('../public/backgrounds/04-details-desktop.webp'); }
+#thanks { background-image: url('../public/backgrounds/05-thanks-desktop.webp'); }
+
+@media (max-width: 768px) {
+    #home { background-image: url('../public/backgrounds/01-home-mobile.webp'); }
+    #about-event { background-image: url('../public/backgrounds/02-about-mobile.webp'); }
+    #about-samir { background-image: url('../public/backgrounds/03-samir-mobile.webp'); }
+    #details { background-image: url('../public/backgrounds/04-details-mobile.webp'); }
+    #thanks { background-image: url('../public/backgrounds/05-thanks-mobile.webp'); }
+}
+
+.card-panel { background: rgba(250, 249, 245, 0.85); color: var(--dark-blue); padding: 40px; border-radius: 30px; max-width: 600px; text-align: center; }
+.gold-btn { background: linear-gradient(to right, #d4af37, #fcf6ba); padding: 18px 35px; border-radius: 50px; text-decoration: none; color: var(--dark-blue); font-weight: bold; display: inline-block; margin-top: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+h1, h2 { font-family: var(--font-heading); color: var(--gold); margin: 10px 0; }
+nav { position: fixed; top: 20px; width: 100%; text-align: center; z-index: 1000; }
+nav a { color: #fff; margin: 0 15px; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; }
