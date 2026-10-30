@@ -68,6 +68,15 @@
         <button id="music-toggle" style="background:var(--gold); border:none; padding:15px; border-radius:50%; cursor:pointer;">🎵</button>
         <audio id="bg-music" loop><source src="public/music/firework.mp3" type="audio/mpeg"></audio>
     </div>
-    <script src="js/main.js"></script>
+    <script>
+        // Intersection Observer for smooth content appearance
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.section').forEach(section => observer.observe(section));
+    </script>
 </body>
 </html>
