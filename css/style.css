@@ -29,12 +29,16 @@ body { margin: 0; background: var(--dark-blue); color: #fff; font-family: var(--
 #thanks { background-image: url('../public/backgrounds/05-thanks-desktop.webp'); }
 
 @media (max-width: 768px) {
-    #home { background-image: url('../public/backgrounds/01-home-mobile.webp'); background-position: center bottom; }
-    #home .content-wrapper { flex-direction: column-reverse; justify-content: flex-end; padding-top: 80px; }
-    #home .hero-text { text-align: center; order: -1; margin-bottom: 20px; }
-    #home .hero-image { width: 250px; order: 1; }
-    h1 { font-size: 2.5rem !important; }
-    .hero-button { padding: 12px 30px; font-size: 1rem; align-self: center; }
+    #home { background-image: url('../public/backgrounds/01-home-mobile.webp'); background-position: center top !important; }
+    #home .hero-text { 
+        background: radial-gradient(circle, rgba(11, 13, 23, 0.6) 0%, transparent 80%);
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 60px;
+    }
+    .hero-title { color: #F4D477 !important; font-size: 2.5rem !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+    .hero-subtitle { color: #FFF4DF !important; font-size: 1.1rem !important; line-height: 1.5 !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.8); }
+    .gold-btn { background: linear-gradient(135deg, #d4af37, #fcf6ba); color: #0b0d17 !important; margin-top: 20px; }
 }
 
 .card-panel { background: rgba(250, 249, 245, 0.9); color: var(--dark-blue); padding: 30px; border-radius: 20px; max-width: 90%; text-align: center; }
